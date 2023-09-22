@@ -1,7 +1,7 @@
-package Lab1.test;
+package Lab1Old.test;
 
 //package unit_tests;
-import Lab1.src.H2Connection;
+import Lab1Old.src.H2Connection;
 import static org.junit.Assert.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;

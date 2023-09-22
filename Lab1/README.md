@@ -1,14 +1,10 @@
-These unit tests use JUnit 4.13.2. Necessary JAR files:
-- (JUnit 4.13.2 Jar)[https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar]
-- (Hamcrest 1.3 Jar)[https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar]
-- (Windows H2 Database Installer)[https://github.com/h2database/h2database/releases/download/version-2.2.222/h2-setup-2023-08-22.exe]
+## Lab 1: Maven
 
-## Building Unit Tests
+The contents of the my-app folder are a Maven project.
 
-New test classes and methods should be created in the test folder.
+### Executing the Unit Tests Directly Using the Repo
 
-## Executing Unit Tests
+Make sure your machine has the latest version of Maven installed. 
 
-We can compile in the terminal in the test folder: `javac -cp 'Path/to/junit-4.13.2.jar' ./Lab1/src/H2Connection.java ./Lab1/src/H2jdbcCreateScoreTable.java ./Lab1/test/TestScoreTable.java`
+This repository can be cloned with the command `git clone https://github.com/tommcc314/CSE-2102-Software-Engineering.git`
 
-Then, execute using `java -cp 'Path/to/junit-4.13.2.jar;Path/to/hamcrest-core-1.3.jar;Path/to/h2-2.2.222.jar;./Lab1/src;' org.junit.runner.JUnitCore Lab1.test.TestScoreTable`
