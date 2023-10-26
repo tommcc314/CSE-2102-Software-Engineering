@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" 
       xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>2102 Quiz</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="main.css">
@@ -73,31 +73,24 @@
       <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
-    <h1>Welcome to 2102 Quizzes!</h1>
-    <div class="text-center">
-      <a href="quiz" class="btn btn-success" role="button">Test Your Knowledge > </a>
-    </div>
     <div class="container custom">
-      <div class="row">
-        <div class="col-md-7">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="https://via.placeholder.com/700x300" alt="">
+        <h1>Login</h1>
+        <div class="form-outline form-white mb-4">
+            <input type="email" class="form-control form-control-lg" />
+            <label class="form-label">Email</label>
         </div>
-        <div class="col-md-5">
-          <h3>High-quality questions</h3>
-          <p>Quizzes are automatically generated from a databank of interesting and tricky questions.</p>
+        <div class="form-outline form-white mb-4">
+            <input type="password" class="form-control form-control-lg" />
+            <label class="form-label">Password</label>
         </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-5">
-          <h3>Personalized experience</h3>
-          <p>Registered users will receive questions based on the categories and performance on previous questions.</p>
+        <div class="d-flex align-items-center pt-3">
+            <div id="prev">
+                <button class="btn btn-primary">Create Account</button>
+            </div>
+            <div class="ml-auto mr-sm-5">
+                <button class="btn btn-success">Login</button>
+            </div>
         </div>
-        <div class="col-md-7">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="https://via.placeholder.com/700x300" alt="">
-        </div>
-      </div>
-      <hr>
     </div>
   </body>
 </html>
