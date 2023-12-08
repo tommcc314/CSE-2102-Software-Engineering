@@ -3,7 +3,7 @@ import { useState } from 'react';
 import '../styles/quiz.css';
 import qs from './sampleQuestions.js'
 export default function Quiz() {
-    const results = new Array(qs.length).fill(true);
+    const results = new Array(qs.length).fill(false);
     const gradeQuestion = (id, correct) => {
         results[id - 1] = correct;
     }
@@ -23,10 +23,10 @@ export default function Quiz() {
             {Questions}
             <div className="d-flex align-items-center pt-3">
                 <div className="ml-auto mr-sm-5">
-                    {submitted ? <button onClick={() => window.location.reload()} className="btn btn success">Try Again</button> : <button onClick={() => submitQuiz()} className="btn btn-success">Submit</button>}
+                    {submitted ? <button onClick={() => window.location.reload()} className="btn btn success">Try Again</button> : <button onClick={() => submitQuiz()} data-testid="submit" className="btn btn-success">Submit</button>}
                 </div>
             </div>
-            {(submitted > 0) && <p>You got a {score} out of {qs.length}!</p>}
+            {(submitted > 0) && <p data-testid="scoreMessage">{"You got a " + score + " out of " + qs.length + "!"}</p>}
         </div>
     );
 }
